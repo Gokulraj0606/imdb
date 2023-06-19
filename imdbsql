@@ -11,7 +11,7 @@ ALTER TABLE Movies ADD COLUMN User_Reviewed INT
 ALTER TABLE Movies ADD COLUMN Movie_Template VARCHAR
 ALTER TABLE Movies ADD COLUMN Lead_Cast VARCHAR
 ALTER TABLE Movies RENAME COLUMN Lead_Cast TO Lead_Artist
-/*I needed to rename the column so only Renaming */
+/*need to rename the column so only Renaming */
 
 
 ALTER TABLE Movies ADD CONSTRAINT ReviewId_F_Key FOREIGN KEY (ReviewID) REFERENCES Reviews(ID)
